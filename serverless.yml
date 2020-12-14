@@ -40,12 +40,12 @@ inputs:
           cronExpression: "0 3 */1 * * * *"
           enable: true
           argument: jd_joy_feedPets&jd_joy&jd_moneyTree&jd_plantBean&jd_dreamFactory&jd_jdfactory
-    - timer: # 宠汪汪积分兑换奖品# 宠汪汪偷好友积分与狗# 点点券
+    - timer: # 宠汪汪积分兑换奖品# 宠汪汪偷好友积分与狗# 点点券# 京东直播18豆
         parameters:
-          name: jd_joy_reward_jd_joy_steal_jd_necklace
+          name: joy_reward_joy_steal_necklace_live
           cronExpression: "0 0 0-16/8,20 * * * *"
           enable: true
-          argument: jd_joy_reward&jd_joy_steal&jd_necklace
+          argument: jd_joy_reward&jd_joy_steal&jd_necklace&jd_live
     - timer: # 京东全民开红包 # 进店领豆 # 取关京东店铺商品# 京东抽奖机# 东东小窝# 秒杀红包雨# 健康抽奖机
         parameters:
           name: redPacket_shop_unsubscribe_lotteryMachine_small_home_ms_redrain_health
@@ -70,12 +70,12 @@ inputs:
           cronExpression: "0 0 10 * * * *"
           enable: true
           argument: jd_bean_change&jd_rankingList&jd_bean_home&jd_car
-    - timer: # 金融养猪#十元街# 京东快递
+    - timer: # 金融养猪#十元街# 京东快递# 金融打卡领年终奖
         parameters:
-          name: pigPet_syj_kd
-          cronExpression: "0 3 2 * * * *"
+          name: pigPet_syj_kd_jr_sign
+          cronExpression: "0 3 1 * * * *"
           enable: true
-          argument: jd_pigPet&jd_syj&jd_kd
+          argument: jd_pigPet&jd_syj&jd_kd&jr_sign
   environment: #  环境变量
     variables: #  环境变量对象
       AAA: BBB # 不要删除，用来格式化对齐追加的变量的
